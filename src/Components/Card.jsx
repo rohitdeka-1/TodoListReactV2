@@ -17,7 +17,10 @@ const Card = ({ onSubmit, onDelete }) => {
   }
 
   function handleSubmit(e) {
-    e.preventDefault(); // Prevents page reload
+    e.preventDefault(); 
+    if (!Note.title.trim() || !Note.content.trim()) {
+      return;
+    }
     onSubmit(Note); // Pass the new note to the parent component
     setNote({ title: "", content: "" }); // Clears the input fields
   }
