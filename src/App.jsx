@@ -41,7 +41,7 @@ function App() {
           </div>
         ))}
       </div>
-      <div className="text-gray-600 flex justify-center mb-6">
+      <div className="text-gray-600 flex justify-center mb-14">
       <Footer />
       </div>
      
